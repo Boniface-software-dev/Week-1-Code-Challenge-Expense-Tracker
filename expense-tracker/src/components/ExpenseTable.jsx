@@ -13,7 +13,7 @@ function ExpenseTable({ expenses, onDelete }) {
           {expenses.map((exp) => (
             <tr key={exp.id}>
               <td>{exp.description}</td>
-              <td>${exp.amount.toFixed(2)}</td>
+              <td>Ksh {exp.amount.toFixed(2)}</td>
               <td>{exp.category}</td>
               <td>
                 <button onClick={() => onDelete(exp.id)}>Delete</button>
