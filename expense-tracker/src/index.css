@@ -1,4 +1,12 @@
 /* Reset and base styling */
+#root {
+  background-image: url('/src/assets/background2.jpg');
+  height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
