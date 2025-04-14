@@ -35,13 +35,18 @@ function ExpenseForm({ onAddExpense }) {
         onChange={(e) => setAmount(e.target.value)}
         required
       />
-      <input
-        type="text"
-        placeholder="Category"
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-        required
-      />
+      <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          required
+        >
+          <option value="">Select Category</option>
+          <option value="food">Food</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="gas">Gas</option>
+          <option value="clothing">Clothing</option>
+          <option value="other">Other</option>
+      </select>
       <button type="submit">Add Expense</button>
     </form>
   );
